@@ -25,7 +25,7 @@ function Home() {
 			{data
 				.map((e, index) => {
 					return (
-						<NavLink to={`http://localhost:5173/image/${e.id}`} key={index} className="card">
+						<NavLink to={`https://epicpix-frontend.vercel.app/image/${e.id}`} key={index} className="card">
 							<img src={e.imageUrl} className="cardImg" alt="" />
 						</NavLink>
 					);

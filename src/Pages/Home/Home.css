@@ -1,0 +1,35 @@
+.maina {
+	padding: 10px;
+	column-count:8;
+	column-gap: 10px;
+	 
+}
+
+.card {
+	break-inside: avoid;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.cardImg {
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+	.maina {
+		column-count: 3;
+	}
+}
+@media (max-width: 768px) {
+	.maina {
+		column-count: 2;
+	}
+}
+@media (max-width: 480px) {
+	.maina {
+		column-count: 2;
+	}
+}

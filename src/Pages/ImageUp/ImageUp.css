@@ -1,0 +1,166 @@
+/* Fullscreen container */
+.container {
+	height: 100vh;
+	width: 100%;
+	background: url("../../assets/circle-scatter-haikei.svg") no-repeat center/cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding: 15px;
+	box-sizing: border-box;
+	 
+}
+
+/* Glassy wrapper */
+.abccc {
+	background: rgba(94, 94, 94, 0.064);
+	backdrop-filter: blur(15px);
+	border-radius: 20px;
+	padding: 40px;
+	width: 90%;
+	max-width: 1200px;
+	height: auto;
+	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.318);
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+/* Preview section */
+.img-preview {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px dashed #ccc;
+	background-color: #7272721c;
+	border-radius: 15px;
+	height: 400px;
+	padding: 5px;
+}
+
+.img-preview img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+.h1 {
+	font-size: 24px;
+	color: #888;
+}
+
+/* Input panel */
+.img-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.input-div {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.input-div input[type="file"] {
+	font-size: 18px;
+}
+.img-input {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #fff;
+}
+.input {
+	padding: 16px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 2px solid #ccc;
+	outline: none;
+}
+
+.s {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	display: flex;
+	align-items: center;
+	padding: 3px;
+}
+.s > label {
+	color: #fff;
+	font-size: 20px;
+}
+.s > input {
+	scale: 1.4;
+}
+/* Button */
+.but {
+	background-color: #4a90e2;
+	color: white;
+	padding: 18px;
+	border: none;
+	border-radius: 12px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.but:hover {
+	background-color: #357ab8;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+	.abccc {
+		flex-direction: column;
+		align-items: center;
+		padding: 30px;
+	}
+
+	.img-preview {
+		width: 100%;
+		height: 300px;
+	}
+
+	.img-info {
+		width: 100%;
+	}
+	.img-preview img {
+		height: 600px;
+	}
+}
+
+@media (max-width: 600px) {
+	.abccc {
+		padding: 20px;
+	}
+
+	.img-preview img {
+		height: 490px;
+	}
+	.img-preview {
+		height: 250px;
+	}
+
+	.input {
+		font-size: 16px;
+		padding: 12px;
+	}
+
+	.but {
+		font-size: 18px;
+		padding: 14px;
+	}
+
+	.h1 {
+		font-size: 18px;
+	}
+
+	.s {
+		font-size: 16px;
+	}
+}

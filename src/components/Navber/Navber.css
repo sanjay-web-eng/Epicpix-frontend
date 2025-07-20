@@ -1,0 +1,124 @@
+.main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	border-bottom: 2px solid rgba(136, 135, 135, 0.813);
+}
+
+.body {
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+.partOne {
+	padding: 5px;
+	width: 200px;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo {
+	height: 55px;
+	width: 60%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.partTwo {
+	padding: 5px;
+	width: 80%;
+	height: 55px;
+	display: flex;
+	align-items: center;
+}
+.ul {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	gap: 25px;
+	width: 100%;
+	padding: 10px;
+}
+li {
+	list-style-type: none;
+	padding-right: 15px;
+	color: #000;
+}
+.a {
+	text-decoration: none;
+	color: #000;
+}
+
+.body2 {
+	display: none;
+}
+.button {
+	display: none;
+}
+@media screen and (max-width: 700px) {
+	.partTwo {
+		display: none;
+	}
+	.partOne {
+		width: 170px;
+	}
+	.body2 {
+		display: block;
+		background-color: #111927;
+		background-image: radial-gradient(at 47% 33%, hsl(162, 77%, 40%) 0, transparent 59%),
+			radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+	}
+	.PartTwo {
+		background-color: black;
+
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(25px) saturate(76%);
+		-webkit-backdrop-filter: blur(25px) saturate(76%);
+		background-color: rgba(17, 25, 40, 0.14);
+		position: fixed;
+		border: 1px solid rgba(255, 255, 255, 0.125);
+	}
+	.ul2 {
+		height: 100%;
+		padding: 20px;
+		padding-top: 30px;
+		margin: 0px;
+	}
+	.li {
+		font-size: 25px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 600;
+		margin-top: 20px;
+	}
+	.button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 20px;
+	}
+	.butt {
+		scale: 2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		background-color: white;
+	}
+	.logo {
+		width: 60%;
+		width: 90%;
+	}
+	.a {
+		text-decoration: none;
+		color: #fff;
+	}
+}

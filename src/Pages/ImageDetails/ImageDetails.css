@@ -1,0 +1,167 @@
+/* ImageDetails.css */
+.abc {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+}
+.dcsdc {
+	background-color: rgba(0, 0, 0, 0.379);
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 7px;
+}
+.imgDiv {
+	background: rgba(94, 94, 94, 0.064);
+	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.318);
+	backdrop-filter: blur(10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent;
+	border-radius: 20px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 100%;
+	height: 90%;
+	max-width: 700px;
+}
+
+.DetailImg {
+	width: 100%;
+	border-radius: 10px;
+	object-fit: contain;
+	max-height: 480px;
+	padding: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.127);
+	background: transparent;
+}
+
+.imgDiv > button {
+	position: absolute;
+	top: 30px;
+	right: 25px;
+	background: #f8f8f8;
+	border: none;
+	padding: 10px;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease;
+}
+
+.imgDiv > button:hover {
+	transform: scale(1.1);
+	background-color: #f4f4f4;
+}
+
+.side-img-detail {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.side-img-detail h1 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.likes {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 10px;
+	margin-top: 10px;
+	flex-wrap: wrap;
+}
+
+.likes h2 {
+	margin: 0;
+	color: #444;
+	font-size: 24px;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-top: 5px;
+	background-color: transparent;
+	padding-left: px;
+	padding-top: 0px;
+	border-radius: 10px;
+	justify-content: start;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.User-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #ddd;
+}
+
+/* Loader center */
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+	.imgDiv {
+		width: 95%;
+		padding: 15px;
+	}
+
+	.DetailImg {
+		max-height: 300px;
+	}
+
+	.side-img-detail h1 {
+		font-size: 20px;
+	}
+
+	.likes h2 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.imgDiv > button {
+		top: 24px;
+		right: 15px;
+		height: 40px;
+		width: 40px;
+		padding: 8px;
+	}
+
+	.DetailImg {
+		max-height: 800px;
+	}
+
+	.User-img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.likes h2 {
+		font-size: 18px;
+	}
+}

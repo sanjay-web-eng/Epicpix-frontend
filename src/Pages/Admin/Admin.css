@@ -1,0 +1,69 @@
+.admin-main {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+}
+.sec-one {
+	width: 20%;
+}
+.sec-two {
+	border-left: 2px solid #000;
+	width: 80%;
+}
+.all-elm-of-sec-one {
+	height: 50%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.all-elm-of-sec-one button {
+	padding: 10px;
+	width: 290px;
+	height: 50px;
+	border: 2px solid salmon;
+	border-radius: 10px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.all-elm-of-sec-one button:hover {
+	transition: all 1s;
+	background-color: aqua;
+}
+.all-elm-of-sec-one button samp {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+}
+.g {
+	height: 100%;
+	overflow-y: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.gbv{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.g h1 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.user-images-admin{
+    height: 400px;
+    width: 450px;
+}

@@ -30,29 +30,29 @@ function Navber() {
 					<div className="partTwo">
 						<ul className="ul">
 							<li>
-								<a className="a" href="https://epicpix-frontend.vercel.app">
+								<a className="a" href="https://epicpix.vercel.app">
 									Home
 								</a>
 							</li>
 							<li>
-								<a className="a" href="https://epicpix-frontend.vercel.app/user-dashboard">
+								<a className="a" href="https://epicpix.vercel.app/user-dashboard">
 									Profile
 								</a>
 							</li>
 							<li>
-								<a className="a" href="https://epicpix-frontend.vercel.app/image">
+								<a className="a" href="https://epicpix.vercel.app/image">
 									Create Image
 								</a>
 							</li>
 							{isUserLogin ? null : (
 								<>
 									<li>
-										<a className="a" href="https://epicpix-frontend.vercel.app/login">
+										<a className="a" href="https://epicpix.vercel.app/login">
 											Login
 										</a>
 									</li>
 									<li>
-										<a className="a" href="https://epicpix-frontend.vercel.app/signin">
+										<a className="a" href="https://epicpix.vercel.app/signin">
 											Signup
 										</a>
 									</li>
@@ -77,12 +77,12 @@ function Navber() {
 					<div className="PartTwo">
 						<ul className="ul2">
 							<li className="li">
-								<a className="a" href="https://epicpix-frontend.vercel.app">
+								<a className="a" href="https://epicpix.vercel.app">
 									Home
 								</a>
 							</li>
 							<li className="li">
-								<a className="a" href="https://epicpix-frontend.vercel.app/user-dashboard">
+								<a className="a" href="https://epicpix.vercel.app/user-dashboard">
 									Profile
 								</a>
 							</li>
@@ -94,12 +94,12 @@ function Navber() {
 							{isUserLogin ? null : (
 								<>
 									<li className="li">
-										<a className="a" href="https://epicpix-frontend.vercel.app/login">
+										<a className="a" href="https://epicpix.vercel.app/login">
 											Login
 										</a>
 									</li>
 									<li className="li">
-										<a className="a" href="https://epicpix-frontend.vercel.app/signin">
+										<a className="a" href="https://epicpixd.vercel.app/signin">
 											Signup
 										</a>
 									</li>

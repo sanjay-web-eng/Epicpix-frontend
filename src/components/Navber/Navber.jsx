@@ -99,7 +99,7 @@ function Navber() {
 										</a>
 									</li>
 									<li className="li">
-										<a className="a" href="https://epicpixd.vercel.app/signin">
+										<a className="a" href="https://epicpix.vercel.app/signin">
 											Signup
 										</a>
 									</li>

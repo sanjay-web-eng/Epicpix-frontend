@@ -12,24 +12,20 @@
 	box-sizing: border-box;
 }
 .dcsdc {
-	background-color: rgba(0, 0, 0, 0.379);
+	background-color: rgb(255, 255, 255);
 	height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 7px;
+	padding: 2px;
 }
 .imgDiv {
-	background: rgba(94, 94, 94, 0.064);
-	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.318);
-	backdrop-filter: blur(10px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: transparent;
-	border-radius: 20px;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
 	padding: 20px;
 	width: 100%;
 	height: 90%;
@@ -38,11 +34,10 @@
 
 .DetailImg {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 20px;
 	object-fit: contain;
 	max-height: 480px;
 	padding: 5px;
-	border: 2px solid rgba(0, 0, 0, 0.127);
 	background: transparent;
 }
 
@@ -73,7 +68,7 @@
 
 .side-img-detail h1 {
 	font-size: 24px;
-	color: #333;
+	color: #000000;
 	margin-bottom: 15px;
 	text-align: center;
 }
@@ -89,7 +84,7 @@
 
 .likes h2 {
 	margin: 0;
-	color: #444;
+	color: #000000;
 	font-size: 24px;
 }
 
@@ -127,11 +122,14 @@
 @media screen and (max-width: 768px) {
 	.imgDiv {
 		width: 95%;
-		padding: 15px;
+		height: 100%;
+		padding: 5px;
 	}
 
 	.DetailImg {
 		max-height: 300px;
+		margin: 0px;
+		padding: 0px;
 	}
 
 	.side-img-detail h1 {
@@ -141,27 +139,42 @@
 	.likes h2 {
 		font-size: 20px;
 	}
+	.dcsdc {
+		height: 100%;
+	}
 }
 
 @media screen and (max-width: 480px) {
 	.imgDiv > button {
-		top: 24px;
-		right: 15px;
-		height: 40px;
-		width: 40px;
-		padding: 8px;
+		top: auto;
+		margin-top: 5px;
+		right: 13px;
+		height: 33px;
+		width: 32px;
+		padding: 0px;
+		 
+	}
+	.side-img-detail{
+		margin: 0px;
 	}
 
 	.DetailImg {
-		max-height: 800px;
+		max-height: 100vh;
+		padding: 0px;
 	}
 
 	.User-img {
 		width: 40px;
 		height: 40px;
 	}
-
+	.likes{
+		height: 100%;
+		padding: 0px;
+		display: flex;
+		align-items: center;
+		
+	}
 	.likes h2 {
-		font-size: 18px;
+		font-size: 15px;
 	}
 }

@@ -1,5 +1,5 @@
 import axios from "axios";
-let url = "https://epicpix.onrender.com";
+let url = "http://localhost:8080";
 
 // === PUBLIC APIS ===
 
@@ -24,7 +24,7 @@ async function getImgById(ImgId) {
 	}
 }
 
-async function singupApi(username, password, email) {
+async function signupApi(username, password, email) {
 	try {
 		const data = new FormData();
 		data.append("username", username);
@@ -52,14 +52,16 @@ async function singupApi(username, password, email) {
 }
 
 async function loginApi(username, password) {
+	const formdata = new FormData();
+	formdata.append("username", username);
+	formdata.append("password", password);
 	try {
-		const { data, status } = await axios.post(`${url}/public/login/${username}/${password}`);
+		const { data, status } = await axios.post(`${url}/public/login` , formdata);
 		if (status === 200) return data;
-		else if (status === 403) alert("Wrong password");
-		else if (status === 400) alert("User not found");
 	} catch (error) {
-		alert("Login failed");
-		console.error(error);
+		if (error.response?.status === 401) alert("Wrong password");
+		else if (error.response?.status === 404) alert("User not found");
+		else alert("Login failed. Please try again.");
 	}
 }
 
@@ -329,7 +331,7 @@ async function DeleteImageForADMIN(UserId, token) {
 
 export {
 	getHomedata,
-	singupApi,
+	signupApi,
 	loginApi,
 	getUser,
 	saveImg,

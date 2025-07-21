@@ -14,7 +14,7 @@
 .cardImg {
 	width: 100%;
 	height: auto;
-	border-radius: 20px;
+	border-radius: 13px;
 	object-fit: cover;
 }
 
@@ -26,10 +26,12 @@
 @media (max-width: 768px) {
 	.maina {
 		column-count: 2;
+		padding: 10px;
 	}
 }
 @media (max-width: 480px) {
 	.maina {
+		padding: 2px;
 		column-count: 2;
 	}
 }

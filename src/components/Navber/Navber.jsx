@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navber.css";
-import Logo from "../../assets/Screenshot 2025-07-12 015803.png";
+import Logo from "../../assets/Screenshot_2025-07-12_015803-removebg-preview.png";
 import Cookies from "js-cookie";
 import { TiThMenu } from "react-icons/ti";
 import { MdClose } from "react-icons/md";
@@ -24,9 +24,9 @@ function Navber() {
 		<div className="" style={{ position: "sticky", top: "0px" , zIndex:2 }}>
 			<div className="main">
 				<div className="body">
-					<div className="partOne">
+					<a href="/" className="partOne">
 						<img src={Logo} className="logo" />
-					</div>
+					</a>
 					<div className="partTwo">
 						<ul className="ul">
 							<li>

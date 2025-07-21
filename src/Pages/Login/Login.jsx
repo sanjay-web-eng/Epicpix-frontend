@@ -3,8 +3,10 @@ import "./Login.css";
 import { loginApi } from "../../apis/BackendApisImpl";
 import Cookie from "js-cookie";
 import { useNavigate } from "react-router-dom";
+import Loader from "../../components/Loader";
 const Login = () => {
 	const navigate = useNavigate();
+	const [isLoading, setisLoading] = useState(false);
 	const [form, setForm] = useState({
 		Username: "",
 		password: "",
@@ -17,18 +19,20 @@ const Login = () => {
 	};
 
 	const handleSubmit = async (e) => {
+		setisLoading(true);
 		e.preventDefault();
 		const a = await loginApi(form.Username, form.password);
-		console.log(a);
 		if (a == null) {
 		} else {
 			Cookie.set("cookie", a, { expires: 7 });
 			navigate("/");
 		}
+		setisLoading(false);
 	};
 
 	return (
 		<div className="login-container">
+			{isLoading ? <Loader /> : null}
 			<form className="login-form" onSubmit={handleSubmit} noValidate>
 				<h2>Login</h2>
 

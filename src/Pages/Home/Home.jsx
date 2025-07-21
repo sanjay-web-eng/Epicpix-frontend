@@ -35,5 +35,3 @@ function Home() {
 }
 
 export default Home;
-
-//git remote set-url origin https://github.com/sanjay-web-eng/Epicpix-backend
